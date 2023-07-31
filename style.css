@@ -1,0 +1,106 @@
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    padding: 5px;
+    height: 100px;
+    background-color: green;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+}
+
+.searchbar{
+    display: flex;
+    width: 700px;
+    height: 50px;
+    text-align: left;
+    align-items: center;
+}
+
+#citySearch{
+    width: 800px;
+    
+}
+
+.unitChangeButton{
+    padding-right: 100px;
+}
+
+
+
+#weatherDisplay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+    background-color: red;
+}
+
+.currentWeatherDisplay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 30%;
+    padding: 25px;
+    border: 1px solid purple;
+
+}
+
+.currentCity{
+    font-size: 32px;
+    padding: 5px;
+}
+
+.currentCondition{
+    font-size: 22px;
+    text-align: center;
+}
+
+.currentTemp{
+    font-size: 64px;
+    padding: 25px;
+}
+
+.forecast{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 70%;
+    padding: 25px;
+    overflow-x: scroll;
+}
+
+.forecast .data{
+    padding: 25px;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+}
+
+
+#extraWeatherDisplay{
+    height: 245px;
+    background-color: blue;
+}
+
+
+
+.extraCurrentWeatherDisplay {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.extraCurrentWeatherDisplay div{
+    font-weight: bold;
+}

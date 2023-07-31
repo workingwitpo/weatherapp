@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css"></style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="./assets/weather_logo.png" style="max-width:150px; height:auto;">
+            </div>    
+            <div class="searchbar">
+                <form id="citySearch">
+                    <input type="search" id="query" name="query" placeholder="Enter a city name or ZIP code"style="width: 50%; font-size:20px;">
+                    <button type="submit" style="font-size:20px;" onclick=captureForm(event)>Search</button>
+                </form>
+            </div>
+            <div class="unitChangeButton">
+                <button id="tempUnitChange"style="font-size:20px" value="F">
+                    <span style=font-weight:bold>&deg F</span>
+                    /
+                    <span style="font-weight:normal">&deg C</span>
+                </button>
+            </div>
+        </nav>
+        <div id="weatherDisplay"></div>
+        <div id="extraWeatherDisplay"></div>
+    </div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
