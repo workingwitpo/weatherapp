@@ -308,7 +308,7 @@ async function displayCurrentWeather(weatherData){
 
 ///Requests Data from Weather API
 async function requestCurrentWeather(cityName){
-  url = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityName}&days=5&aqi=yes&alerts=no`;
+  url = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${cityName}&days=5&aqi=yes&alerts=no`;
   const response = await fetch(url);
   const jsonData = await response.json();
   return jsonData;
